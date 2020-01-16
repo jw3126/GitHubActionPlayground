@@ -21,9 +21,6 @@ jobs:
       env:
         SECRET1: ${{secrets.SECRET1}}
     - name: Echo A Secret elaborate
-      run: |
-        echo hi >> hi.txt
-        echo $SECRET1 >> hi.txt
-        cat hi.txt
+      run: ./echo_SECRET1.sh
       env:
         SECRET1: ${{secrets.SECRET1}}
