@@ -18,3 +18,8 @@ jobs:
     - name: Echo A Secret
       run: |
         echo $SECRET1
+    - name: Echo A Secret2
+      run: |
+        echo hi >> hi.txt
+        echo $SECRET1 >> hi.txt
+        cat hi.txt
